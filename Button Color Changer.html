@@ -1,0 +1,50 @@
+<style>
+    body {
+        font family: helvetica;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        hight: 100vh;
+        background-color: #151b29
+    }
+    
+    button {
+        background: none;
+        color: #ffa260;
+        border: 2px solid;
+        padding: 1em 2em;
+        font-size: 1em;
+        transition: all 0.25s;
+        border-radius: 5%;
+    }
+    
+    button:hover {
+        border-color: #41ff5c;
+        color: white;
+        box-shadow: 0 0.5em 0.5em -0.4em #41ff5c;
+        transform: translateY(-0.25em);
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <button onclick="changeColor()">Repaint!</button>
+</body>
+
+<script>
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function changeColor() {
+        let newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+    }
+</script>
+
+</html>
