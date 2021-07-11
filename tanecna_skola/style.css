@@ -1,0 +1,233 @@
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+     }
+     
+     body {
+         background-color: rgb(250, 248, 248);
+         width: 100vw;
+         overflow-x: hidden;
+     }
+     
+     .navbar {
+         padding-left: 50px;
+         background-color: rgb(250, 248, 248);
+         color: #000;
+     }
+     
+     #hero {
+         display: flex;
+         flex-direction: row-reverse;
+     }
+     
+     .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         align-items: center;
+         width: 100%;
+         height: 570px;
+         background-color: #000;
+     }
+     
+     #hero h1 {
+         color: rgb(255, 255, 255);
+         font-weight: bold;
+         font-size: 45px;
+     }
+     
+     #hero p {
+         color: rgb(255, 255, 255);
+         margin-top: 10px;
+         padding: 10px
+     }
+     
+     #header-img {
+         width: 100%;
+         height: 570px;
+     }
+     
+     .levels {
+         width: 100%;
+         margin-top: 50px;
+         padding: 20px;
+         display: grid;
+         text-align: center;
+     }
+     
+     .levels h2 {
+         padding-bottom: 20px;
+         font-weight: bold;
+         font-size: 30px;
+     }
+     
+     table {
+         border: 1px rgb(182, 181, 181) solid;
+         padding: 10px;
+         margin: 15px;
+     }
+     
+     table th {
+         padding-top: 5px;
+     }
+     
+     table td {
+         border-left: 1px rgb(182, 181, 181) solid;
+         font-size: 14px;
+         text-align: center;
+         padding: 5px;
+     }
+     
+     table td:first-child {
+         border-left: none;
+     }
+     
+     ul {
+         list-style: none;
+     }
+     
+     #danceStyles h2 {
+         text-align: center;
+         padding: 30px;
+     }
+     
+     #danceStyles ul li {
+         float: left;
+         padding: 10px;
+         border-bottom: 1px solid rgb(182, 181, 181);
+         border-right: 1px solid rgb(182, 181, 181);
+         margin-left: 23px;
+     }
+     
+     #danceStyles li:hover {
+         cursor: pointer;
+     }
+     
+     #galeria .galeria {
+         display: inline-flex;
+         margin: 50px;
+     }
+     
+     #galeria .galeria img {
+         width: 390px;
+         height: 250px;
+     }
+     
+     .product {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         text-align: center;
+         border: 1px rgb(182, 181, 181) solid;
+         border-radius: 3px;
+         margin-left: 60px;
+         margin-right: 60px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         padding: 20px;
+     }
+     
+     #cennik h2 {
+         margin-left: 120px;
+     }
+     
+     .btn {
+         margin: 13px;
+         padding: 0 20px;
+         height: 40px;
+         font-size: 16px;
+         font-weight: 900;
+         text-transform: uppercase;
+         border: 3px rgb(182, 181, 181) solid;
+         border-radius: 4px;
+         cursor: pointer;
+     }
+     
+     button:hover {
+         background-color: rgb(174, 195, 201);
+     }
+     
+     footer {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         height: 200px;
+         margin-top: 50px;
+     }
+     
+     #submit {
+         height: 30px;
+         padding: 0 15px;
+         font-size: 13px;
+     }
+     
+     #submit:hover {
+         background-color: rgb(174, 195, 201);
+     }
+     
+     @media(max-width: 480px) {
+         html {
+             width: 100vw;
+             overflow-x: hidden;
+         }
+         #hero {
+             flex-direction: column;
+             flex-flow: column wrap;
+         }
+         #hero h1 {
+             font-size: 30px;
+             margin: 0;
+         }
+         #hero p {
+             font-size: 13px;
+             text-align: center;
+             padding: 0;
+             margin: 0;
+             text-shadow: 2px 2px 5px #000;
+         }
+         .container {
+             padding: 100px;
+             margin: 0;
+             background-image: url("../dance_school/hero_mobile.jpg");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             width: 100%;
+             height: 500px;
+         }
+         #hero img {
+             display: none;
+         }
+         table {
+             display: none;
+         }
+         #danceStyles ul {
+             display: flex;
+             flex-flow: column;
+         }
+         #danceStyles ul li {
+             border-right: none;
+             margin: 0;
+         }
+         #galeria .galeria {
+             display: flex;
+             flex-flow: column;
+             justify-content: center;
+             align-items: center;
+             margin: 0;
+             padding: 0;
+         }
+         #galeria .galeria img:last-child {
+             margin-bottom: 50px;
+         }
+         .product {
+             justify-content: center;
+             flex-direction: column;
+         }
+     }
