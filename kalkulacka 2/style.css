@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+*,
+html,
+body,
+p {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#calculator {
+    margin-top: 70px;
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.display {
+    width: 100%;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    background-color: #223850;
+    transition: all 0.3s ease-in
+}
+
+.buttons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 0.3px solid rgba(251, 253, 255, 0.171);
+}
+
+.button-num {
+    background-color: #223850;
+    color: #6885A7;
+}
+
+.button-num:hover {
+    background-color: #2c445e;
+}
+
+.button-delOne,
+.button-delAll,
+.button-operator {
+    background-color: #128094;
+    color: #ffffff;
+}
+
+.button-delOne:hover,
+.button-delAll:hover,
+.button-operator:hover {
+    background-color: rgb(52, 155, 196) !important
+}
+
+.button#execute {
+    background-color: #e77c18;
+    color: white;
+}
+
+.button#execute:hover {
+    background-color: #d47317;
+    color: white;
+}
+
+.button-2rows {
+    grid-row: span 2;
+}
+
+.button-2cols {
+    grid-column: span 2;
+}
