@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Paint</title>
+</head>
+
+<body>
+    <div class="paint">
+        <div class="options">
+            <div class="options__item">
+                <a href="#" class="options__button save" download="my-image.png">Save</a>
+            </div>
+            <div class="options__item">
+                <button class="options__button undo">Undo</button>
+            </div>
+            <div class="options__item">
+                <label for="size" class="option__label">Size: </label>
+                <input type="number" id="size" min="1" max="50">
+            </div>
+            <div class="options__item">
+                <label for="color" class="option__label">Color: </label>
+                <input type="color" id="color">
+            </div>
+        </div>
+        <div class="toolbar">
+            <div class="toolbar__tool"><button class="toolbar__button brush toolbar__button--pressed" data-name="brush">Brush</button></div>
+            <div class="toolbar__tool"><button class="toolbar__button line" data-name="line">Line</button></div>
+            <div class="toolbar__tool"><button class="toolbar__button rectangle" data-name="rectangle">Rectangle</button></div>
+            <div class="toolbar__tool"><button class="toolbar__button circle" data-name="circle">Circle</button/></div>
+            <div class="toolbar__tool"><button class="toolbar__button eraser" data-name="eraser">Eraser</button></div>
+        </div>
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

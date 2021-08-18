@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.paint {
+    width: 900px;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 15px;
+}
+
+.options__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.options__button {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+.save {
+    background-image: url(images/save.svg);
+}
+
+.undo {
+    background-image: url(images/undo.svg)
+}
+
+.option__label {
+    margin-right: 10px;
+}
+
+.toolbar__button {
+    width: 50px;
+    height: 50px;
+    background-color: #cacaca;
+    border: 1px solid #999;
+    font-size: 0;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+
+.brush {
+    background-image: url(images/paint-brush.svg);
+}
+
+.line {
+    background-image: url(images/line.svg);
+}
+
+.rectangle {
+    background-image: url(images/rectangle.svg);
+}
+
+.circle {
+    background-image: url(images/circle.svg);
+}
+
+.eraser {
+    background-image: url(images/eraser.svg);
+}
+
+.toolbar__button--pressed {
+    background-color: #fff;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px #ccc;
+    margin-left: 15px;
+}
